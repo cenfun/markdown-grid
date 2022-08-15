@@ -18,7 +18,7 @@ const mg = MG({
     ]
 });
 
-console.log(mg)  
+console.log(mg);  
 
 |   |Name|Value|
 |---|----|-----|
@@ -46,7 +46,7 @@ const mg = MG({
     ]
 });
 
-console.log(mg)  
+console.log(mg);  
 
 |   |Name           |Value                              |
 |---|---------------|-----------------------------------|
@@ -97,7 +97,7 @@ const mg = MG({
     }]
 });
 
-console.log(mg)  
+console.log(mg);  
 
 | Default    | Left       |   Center   |      Right |
 | ---------- | :--------- | :--------: | ---------: |
@@ -127,7 +127,7 @@ const mg = MG({
     ]
 });
 
-console.log(mg)  
+console.log(mg);  
 
 |Name           |Character|
 |---------------|:-------:|
@@ -146,22 +146,22 @@ console.log(mg)
 ```sh  
 const MG = require("markdown-grid");
 const mg = MG({
-    "columns": ["Link", "Image", "Codes", "Formatting"],
+    "columns": ["Name", "Version", "Install", "Description"],
     "rows": [
-        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![npm](https://badgen.net/npm/v/markdown-grid)", "`npm i markdown-grid`", "**Bold** *italic*"]
+        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![npm](https://badgen.net/npm/v/markdown-grid)", "`npm i markdown-grid`", "Generating a **Markdown** *Grid*"],
+        ["[console-grid](https://github.com/cenfun/console-grid)", "![npm](https://badgen.net/npm/v/console-grid)", "`npm i console-grid`", "Log a *Grid* in **Console**"]
     ]
 });
 
-console.log(mg)  
+console.log(mg);  
 
-|Link|Image|Codes|Formatting|
-|----|-----|-----|----------|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|**Bold** *italic*|  
+|Name|Version|Install|Description|
+|----|-------|-------|-----------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|Generating a **Markdown** *Grid*|
+|[console-grid](https://github.com/cenfun/console-grid)|![npm](https://badgen.net/npm/v/console-grid)|`npm i console-grid`|Log a *Grid* in **Console**|  
 ```  
-|Link|Image|Codes|Formatting|
-|----|-----|-----|----------|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|**Bold** *italic*|
+|Name|Version|Install|Description|
+|----|-------|-------|-----------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|Generating a **Markdown** *Grid*|
+|[console-grid](https://github.com/cenfun/console-grid)|![npm](https://badgen.net/npm/v/console-grid)|`npm i console-grid`|Log a *Grid* in **Console**|
 
-
-## console-grid
-If you need to log a grid in console, check out [console-grid](https://github.com/cenfun/console-grid)

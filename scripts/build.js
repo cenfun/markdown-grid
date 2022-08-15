@@ -157,13 +157,19 @@ const start = () => {
     }, {
         title: 'With links, images, Codes and formatting:',
         data: {
-            columns: ['Link', 'Image', 'Codes', 'Formatting'],
+            columns: ['Name', 'Version', 'Install', 'Description'],
             rows: [
                 [
                     '[markdown-grid](https://github.com/cenfun/markdown-grid)',
                     '![npm](https://badgen.net/npm/v/markdown-grid)',
                     '`npm i markdown-grid`',
-                    '**Bold** *italic*'
+                    'Generating a **Markdown** *Grid*'
+                ],
+                [
+                    '[console-grid](https://github.com/cenfun/console-grid)',
+                    '![npm](https://badgen.net/npm/v/console-grid)',
+                    '`npm i console-grid`',
+                    'Log a *Grid* in **Console**'
                 ]
             ]
         }
@@ -174,7 +180,7 @@ const start = () => {
         const codes = ['const MG = require("markdown-grid");'];
         codes.push(`const mg = MG(${JSON.stringify(item.data)});`);
         codes.push('');
-        codes.push('console.log(mg)');
+        codes.push('console.log(mg);');
 
         const code = codes.join(os.EOL);
 

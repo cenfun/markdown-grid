@@ -10,6 +10,3 @@ npm i markdown-grid
 
 {placeholder_list}
 
-
-## console-grid
-If you need to log a grid in console, check out [console-grid](https://github.com/cenfun/console-grid)
