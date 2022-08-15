@@ -155,15 +155,15 @@ const start = () => {
             ]
         }
     }, {
-        title: 'With links, images and formatting:',
+        title: 'With links, images, Codes and formatting:',
         data: {
-            columns: ['Link', 'Image', 'Bold', 'Code'],
+            columns: ['Link', 'Image', 'Codes', 'Formatting'],
             rows: [
                 [
                     '[markdown-grid](https://github.com/cenfun/markdown-grid)',
                     '![npm](https://badgen.net/npm/v/markdown-grid)',
-                    '**Bold** *italic*',
-                    '`npm i markdown-grid`'
+                    '`npm i markdown-grid`',
+                    '**Bold** *italic*'
                 ]
             ]
         }

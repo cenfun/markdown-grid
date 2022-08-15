@@ -142,25 +142,25 @@ console.log(mg)
 |Pipe           |    \|   |
 |Escaped Pipes  |  \|\|\| |
 |中文           |    ✅   |  
-## With links, images and formatting:  
+## With links, images, Codes and formatting:  
 ```sh  
 const MG = require("markdown-grid");
 const mg = MG({
-    "columns": ["Link", "Image", "Bold", "Code"],
+    "columns": ["Link", "Image", "Codes", "Formatting"],
     "rows": [
-        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![npm](https://badgen.net/npm/v/markdown-grid)", "**Bold** *italic*", "`npm i markdown-grid`"]
+        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![npm](https://badgen.net/npm/v/markdown-grid)", "`npm i markdown-grid`", "**Bold** *italic*"]
     ]
 });
 
 console.log(mg)  
 
-|Link|Image|Bold|Code|
-|----|-----|----|----|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|  
+|Link|Image|Codes|Formatting|
+|----|-----|-----|----------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|**Bold** *italic*|  
 ```  
-|Link|Image|Bold|Code|
-|----|-----|----|----|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|
+|Link|Image|Codes|Formatting|
+|----|-----|-----|----------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|**Bold** *italic*|
 
 
 ## console-grid
