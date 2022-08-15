@@ -78,73 +78,57 @@ const start = () => {
 
     const list = [{
         data: {
-            columns: [{
-                id: 'index',
-                name: ''
-            }, {
-                id: 'name',
-                name: 'Name'
-            }, {
-                id: 'value',
-                name: 'Value'
-            }],
-            rows: [{
-                index: 1,
-                name: 'Tom',
-                value: 'Value 1'
-            }, {
-                index: 2,
-                name: 'Jerry',
-                value: 'Value 2'
-            }]
+            columns: ['', 'Name', 'Value'],
+            rows: [
+                [1, 'Tom', 'Value 1'],
+                [2, 'Jerry', 'Value 2']
+            ]
         }
     }, {
         title: 'With column width:',
         data: {
-            columns: [{
-                id: 'index',
-                name: ''
-            }, {
-                id: 'name',
+            columns: ['', {
                 name: 'Name',
                 width: 15
             }, {
-                id: 'value',
                 name: 'Value',
                 width: 35
             }],
-            rows: [{
-                index: 1,
-                name: 'Hello',
-                value: 'Long Text Value'
-            }, {
-                index: 2,
-                name: 'Hello There',
-                value: 'Long Text Value Long Text Value'
-            }]
+            rows: [
+                [1, 'Hello', 'Long Text Value'],
+                [2, 'Hello There', 'Long Text Value Long Text Value']
+            ]
         }
     }, {
         title: 'With column align:',
         data: {
             columns: [{
+                id: 'default',
+                name: 'Default',
+                width: 10
+            }, {
                 id: 'left',
-                name: 'Left (Default)'
+                name: 'Left',
+                width: 10,
+                align: 'left'
             }, {
                 id: 'center',
                 name: 'Center',
-                width: 15,
+                width: 10,
                 align: 'center'
             }, {
                 id: 'right',
                 name: 'Right',
-                width: 15,
+                width: 10,
                 align: 'right'
             }],
             rows: [{
+                default: 'Cell',
                 left: 'Markdown',
                 center: 'Start',
                 right: '123.0'
             }, {
+                default: 'Content',
                 left: 'Grid',
                 center: 'Complete',
                 right: '8.1'
