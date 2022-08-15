@@ -1,0 +1,22 @@
+{
+    "name": "markdown-grid",
+    "version": "1.0.0",
+    "description": "Markdown Grid Generator",
+    "main": "lib/index.js",
+    "scripts": {
+        "build": "node ./scripts/build.js"
+    },
+    "files": [
+        "lib"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cenfun/markdown-grid.git"
+    },
+    "devDependencies": {
+        "eslint": "^8.22.0",
+        "eslint-config-plus": "^1.0.3",
+        "eslint-plugin-html": "^7.1.0",
+        "js-beautify": "^1.14.5"
+    }
+}
