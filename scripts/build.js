@@ -141,13 +141,13 @@ const start = () => {
                 align: 'right'
             }],
             rows: [{
-                left: 'left 1',
-                center: 'center 1',
-                right: 'right 1'
+                left: 'Markdown',
+                center: 'Start',
+                right: '123.0'
             }, {
-                left: 'left 2',
-                center: 'center 2',
-                right: 'right 2'
+                left: 'Grid',
+                center: 'Complete',
+                right: '8.1'
             }]
         }
     }].map((item) => {
