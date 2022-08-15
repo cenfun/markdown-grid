@@ -18,17 +18,17 @@ const mg = MG({
     ]
 });
 
-console.log(mg);  
+console.log(mg)  
 
-|   |Name   |Value   |
-|---|-------|--------|
-|1  |Tom    |Value 1 |
-|2  |Jerry  |Value 2 |  
+|   |Name|Value|
+|---|----|-----|
+|1  |Tom |Value 1|
+|2  |Jerry|Value 2|  
 ```  
-|   |Name   |Value   |
-|---|-------|--------|
-|1  |Tom    |Value 1 |
-|2  |Jerry  |Value 2 |  
+|   |Name|Value|
+|---|----|-----|
+|1  |Tom |Value 1|
+|2  |Jerry|Value 2|  
 ## With column width:  
 ```sh  
 const MG = require("markdown-grid");
@@ -46,7 +46,7 @@ const mg = MG({
     ]
 });
 
-console.log(mg);  
+console.log(mg)  
 
 |   |Name           |Value                              |
 |---|---------------|-----------------------------------|
@@ -57,10 +57,13 @@ console.log(mg);
 |---|---------------|-----------------------------------|
 |1  |Hello          |Long Text Value                    |
 |2  |Hello There    |Long Text Value Long Text Value    |  
-## With column align:  
+## With column align and padding:  
 ```sh  
 const MG = require("markdown-grid");
 const mg = MG({
+    "options": {
+        "padding": 1
+    },
     "columns": [{
         "id": "default",
         "name": "Default",
@@ -94,17 +97,17 @@ const mg = MG({
     }]
 });
 
-console.log(mg);  
+console.log(mg)  
 
-|Default   |Left      |  Center  |     Right|
-|----------|:---------|:--------:|---------:|
-|Cell      |Markdown  |   Start  |     123.0|
-|Content   |Grid      | Complete |       8.1|  
+| Default    | Left       |   Center   |      Right |
+| ---------- | :--------- | :--------: | ---------: |
+| Cell       | Markdown   |    Start   |      123.0 |
+| Content    | Grid       |  Complete  |        8.1 |  
 ```  
-|Default   |Left      |  Center  |     Right|
-|----------|:---------|:--------:|---------:|
-|Cell      |Markdown  |   Start  |     123.0|
-|Content   |Grid      | Complete |       8.1|  
+| Default    | Left       |   Center   |      Right |
+| ---------- | :--------- | :--------: | ---------: |
+| Cell       | Markdown   |    Start   |      123.0 |
+| Content    | Grid       |  Complete  |        8.1 |  
 ## With special character:  
 ```sh  
 const MG = require("markdown-grid");
@@ -119,23 +122,26 @@ const mg = MG({
     "rows": [
         ["Backtick", "`"],
         ["Pipe", "|"],
-        ["Escaped Pipes", "\\||\\|"]
+        ["Escaped Pipes", "\\||\\|"],
+        ["中文", "✅"]
     ]
 });
 
-console.log(mg);  
+console.log(mg)  
 
-|Name           |  Character |
-|---------------|:----------:|
-|Backtick       |      `     |
-|Pipe           |     \|     |
-|Escaped Pipes  |   \|\|\|   |  
+|Name           |Character|
+|---------------|:-------:|
+|Backtick       |    `    |
+|Pipe           |    \|   |
+|Escaped Pipes  |  \|\|\| |
+|中文           |    ✅   |  
 ```  
-|Name           |  Character |
-|---------------|:----------:|
-|Backtick       |      `     |
-|Pipe           |     \|     |
-|Escaped Pipes  |   \|\|\|   |  
+|Name           |Character|
+|---------------|:-------:|
+|Backtick       |    `    |
+|Pipe           |    \|   |
+|Escaped Pipes  |  \|\|\| |
+|中文           |    ✅   |  
 ## With links, images and formatting:  
 ```sh  
 const MG = require("markdown-grid");
@@ -146,14 +152,14 @@ const mg = MG({
     ]
 });
 
-console.log(mg);  
+console.log(mg)  
 
-|Link   |Image   |Bold   |Code   |
-|-------|--------|-------|-------|
+|Link|Image|Bold|Code|
+|----|-----|----|----|
 |[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|  
 ```  
-|Link   |Image   |Bold   |Code   |
-|-------|--------|-------|-------|
+|Link|Image|Bold|Code|
+|----|-----|----|----|
 |[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|
 
 

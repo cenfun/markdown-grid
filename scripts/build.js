@@ -100,8 +100,11 @@ const start = () => {
             ]
         }
     }, {
-        title: 'With column align:',
+        title: 'With column align and padding:',
         data: {
+            options: {
+                padding: 1
+            },
             columns: [{
                 id: 'default',
                 name: 'Default',
@@ -147,7 +150,8 @@ const start = () => {
             rows: [
                 ['Backtick', '`'],
                 ['Pipe', '|'],
-                ['Escaped Pipes', '\\||\\|']
+                ['Escaped Pipes', '\\||\\|'],
+                ['中文', '✅']
             ]
         }
     }, {
@@ -167,12 +171,12 @@ const start = () => {
 
         const mg = MG(item.data);
 
-        const code = `
-            const MG = require("markdown-grid");
-            const mg = MG(${JSON.stringify(item.data)});
-                
-            console.log(mg);
-        `;
+        const codes = ['const MG = require("markdown-grid");'];
+        codes.push(`const mg = MG(${JSON.stringify(item.data)});`);
+        codes.push('');
+        codes.push('console.log(mg)');
+
+        const code = codes.join(os.EOL);
 
         const str = beautify.js(code, {}) + newLine + os.EOL + mg;
 
