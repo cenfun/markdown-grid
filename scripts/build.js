@@ -157,7 +157,7 @@ const start = () => {
             rows: [
                 [
                     '[markdown-grid](https://github.com/cenfun/markdown-grid)',
-                    '![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)',
+                    '![npm](https://badgen.net/npm/v/markdown-grid)',
                     '**Bold** *italic*',
                     '`npm i markdown-grid`'
                 ]

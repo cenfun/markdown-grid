@@ -142,7 +142,7 @@ const MG = require("markdown-grid");
 const mg = MG({
     "columns": ["Link", "Image", "Bold", "Code"],
     "rows": [
-        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)", "**Bold** *italic*", "`npm i markdown-grid`"]
+        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![npm](https://badgen.net/npm/v/markdown-grid)", "**Bold** *italic*", "`npm i markdown-grid`"]
     ]
 });
 
@@ -150,11 +150,11 @@ console.log(mg);
 
 |Link   |Image   |Bold   |Code   |
 |-------|--------|-------|-------|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|  
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|  
 ```  
 |Link   |Image   |Bold   |Code   |
 |-------|--------|-------|-------|
-|[markdown-grid](https://github.com/cenfun/markdown-grid)|![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|
 
 
 ## console-grid
