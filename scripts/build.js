@@ -134,6 +134,35 @@ const start = () => {
                 right: '8.1'
             }]
         }
+    }, {
+        title: 'With special character:',
+        data: {
+            columns: [{
+                name: 'Name',
+                width: 15
+            }, {
+                name: 'Character',
+                align: 'center'
+            }],
+            rows: [
+                ['Backtick', '`'],
+                ['Pipe', '|'],
+                ['Escaped Pipes', '\\||\\|']
+            ]
+        }
+    }, {
+        title: 'With links, images and formatting:',
+        data: {
+            columns: ['Link', 'Image', 'Bold', 'Code'],
+            rows: [
+                [
+                    '[markdown-grid](https://github.com/cenfun/markdown-grid)',
+                    '![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)',
+                    '**Bold** *italic*',
+                    '`npm i markdown-grid`'
+                ]
+            ]
+        }
     }].map((item) => {
 
         const mg = MG(item.data);

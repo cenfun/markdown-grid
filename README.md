@@ -104,7 +104,57 @@ console.log(mg);
 |Default   |Left      |  Center  |     Right|
 |----------|:---------|:--------:|---------:|
 |Cell      |Markdown  |   Start  |     123.0|
-|Content   |Grid      | Complete |       8.1|
+|Content   |Grid      | Complete |       8.1|  
+## With special character:  
+```sh  
+const MG = require("markdown-grid");
+const mg = MG({
+    "columns": [{
+        "name": "Name",
+        "width": 15
+    }, {
+        "name": "Character",
+        "align": "center"
+    }],
+    "rows": [
+        ["Backtick", "`"],
+        ["Pipe", "|"],
+        ["Escaped Pipes", "\\||\\|"]
+    ]
+});
+
+console.log(mg);  
+
+|Name           |  Character |
+|---------------|:----------:|
+|Backtick       |      `     |
+|Pipe           |     \|     |
+|Escaped Pipes  |   \|\|\|   |  
+```  
+|Name           |  Character |
+|---------------|:----------:|
+|Backtick       |      `     |
+|Pipe           |     \|     |
+|Escaped Pipes  |   \|\|\|   |  
+## With links, images and formatting:  
+```sh  
+const MG = require("markdown-grid");
+const mg = MG({
+    "columns": ["Link", "Image", "Bold", "Code"],
+    "rows": [
+        ["[markdown-grid](https://github.com/cenfun/markdown-grid)", "![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)", "**Bold** *italic*", "`npm i markdown-grid`"]
+    ]
+});
+
+console.log(mg);  
+
+|Link   |Image   |Bold   |Code   |
+|-------|--------|-------|-------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|  
+```  
+|Link   |Image   |Bold   |Code   |
+|-------|--------|-------|-------|
+|[markdown-grid](https://github.com/cenfun/markdown-grid)|![](https://badgen.net/npm/v/markdown-grid) ![](https://badgen.net/npm/dt/markdown-grid)|**Bold** *italic*|`npm i markdown-grid`|
 
 
 ## console-grid
