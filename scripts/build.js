@@ -175,8 +175,6 @@ const start = () => {
         }
     }].map((item) => {
 
-        const mg = MG(item.data);
-
         const codes = ['const MG = require("markdown-grid");'];
         codes.push(`const mg = MG(${JSON.stringify(item.data)});`);
         codes.push('');
@@ -184,6 +182,7 @@ const start = () => {
 
         const code = codes.join(os.EOL);
 
+        const mg = MG(item.data);
         const str = beautify.js(code, {}) + newLine + os.EOL + mg;
 
         //console.log(str);
