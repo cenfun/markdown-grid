@@ -5,8 +5,9 @@
 ```sh
 npm i markdown-grid
 ```
-
 ## Usage
+
+Data Format Definition: [CGDF](https://github.com/cenfun/cgdf)
 
 ```sh  
 const MG = require("markdown-grid");
@@ -164,4 +165,5 @@ console.log(mg);
 |----|-------|-------|-----------|
 |[markdown-grid](https://github.com/cenfun/markdown-grid)|![npm](https://badgen.net/npm/v/markdown-grid)|`npm i markdown-grid`|Generating a **Markdown** *Grid*|
 |[console-grid](https://github.com/cenfun/console-grid)|![npm](https://badgen.net/npm/v/console-grid)|`npm i console-grid`|Log a *Grid* in **Console**|
+
 
