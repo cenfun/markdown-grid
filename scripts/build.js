@@ -188,7 +188,7 @@ const start = () => {
         //console.log(str);
 
         const ls = [
-            '```sh',
+            '```js',
             str,
             '```',
             mg

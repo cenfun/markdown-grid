@@ -9,7 +9,7 @@ npm i markdown-grid
 
 Data Format Definition: [CGDF](https://github.com/cenfun/cgdf)
 
-```sh  
+```js  
 const MG = require("markdown-grid");
 const mg = MG({
     "columns": ["", "Name", "Value"],
@@ -31,7 +31,7 @@ console.log(mg);
 |1  |Tom |Value 1|
 |2  |Jerry|Value 2|  
 ## With column width:  
-```sh  
+```js  
 const MG = require("markdown-grid");
 const mg = MG({
     "columns": ["", {
@@ -59,7 +59,7 @@ console.log(mg);
 |1  |Hello          |Long Text Value                    |
 |2  |Hello There    |Long Text Value Long Text Value    |  
 ## With column align and padding:  
-```sh  
+```js  
 const MG = require("markdown-grid");
 const mg = MG({
     "options": {
@@ -110,7 +110,7 @@ console.log(mg);
 | Cell       | Markdown   |    Start   |      123.0 |
 | Content    | Grid       |  Complete  |        8.1 |  
 ## With special character:  
-```sh  
+```js  
 const MG = require("markdown-grid");
 const mg = MG({
     "columns": [{
@@ -144,7 +144,7 @@ console.log(mg);
 |Escaped Pipes  |  \|\|\| |
 |中文           |    ✅   |  
 ## With links, images, Codes and formatting:  
-```sh  
+```js  
 const MG = require("markdown-grid");
 const mg = MG({
     "columns": ["Name", "Version", "Install", "Description"],
